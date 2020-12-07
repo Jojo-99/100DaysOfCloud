@@ -16,7 +16,7 @@
 ###
 #### Wrong test question
 - You are getting a permission error exception when trying to SSH into your Linux Instance
-The key is missing perimissions chmod 0400
+  - The key is missing perimissions chmod 0400
   
 
 ## EC2 Instance Launch Types
