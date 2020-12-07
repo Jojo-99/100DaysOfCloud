@@ -1,4 +1,4 @@
-# Day 3 - EC2 
+# Day 3 - EC2 User Data & Instance Types
 
 ## EC2 User Data
 - It is possible to bootstrap our instances using an EC2 User data script.
