@@ -76,3 +76,6 @@
   
 #### Difference between EC2 Dedicated Instances & EC2 Dedicated Hosts
 ![](Difference.png)
+
+### Wrap up
+![](Which%20is%20right%3F.png)
