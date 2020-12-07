@@ -1,50 +1,17 @@
+# Day 3 - EC2 User Data
 
-# Day 3 
+## EC2 User Data
+- It is possible to bootstrap our instances using an EC2 User data script.
+- bootstrapping means launching commands when a machine starts
+- That script is only run once at the instance first start
+- EC2 user data is used to automate boot tasks such as:
+    - Installing updates
+    - Installing software
+    - Downloading common files from the internet
+- Anything you can think of
+- The EC2 User Data Script runs with the root user
 
-## Introduction
+####  * Remember, EC2 User Date is automatically with the sudo command
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
-
-## Prerequisite
-
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
-
-## Use Case
-
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
-
-## Cloud Research
-
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
-
-## Try yourself
-
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
-
-### Step 1 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 1 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 3 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-## ☁️ Cloud Outcome
-
-✍️ (Result) Describe your personal outcome, and lessons learned.
-
-## Next Steps
-
-✍️ Describe what you think you think you want to do next.
-
-## Social Proof
-
-✍️ Show that you shared your process on Twitter or LinkedIn
-
-[link](link)
+#### You are getting a permission error exception when trying to SSH into your Linux Instance
+The key is missing perimissions chmod 0400
