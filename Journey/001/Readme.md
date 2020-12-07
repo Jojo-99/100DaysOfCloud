@@ -46,7 +46,7 @@ EC2 is one of most popular of AWS offering
 
 ![SSH-Summary-Table](SSH-Summary-Table.png)
 
-*Ps*:  
-- Putty is a drop-in replacement for SSH
-- EC2 Instance Connect allows you to connect to your EC2 Instance directly from your browser on any operating system.
+- ps:  
+   - Putty is a drop-in replacement for SSH
+   - EC2 Instance Connect allows you to connect to your EC2 Instance directly from your browser on any operating system.
 
