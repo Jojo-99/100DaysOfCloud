@@ -1,52 +1,35 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
+# Day 5 - IAM + EC2 Wrap up
 
-# New post title here
+## EC2 Pricing
+- You are billed by the second, with a minimum of 60 seconds.
+- You also pay for other factors such as storage, data transfer, fixed IP
+  public addresses, load balancing   
+- You do not pay for the instance if the instance is stopped
 
-## Introduction
+The best way to know the pricing is to consult the pricing page:
+[Pricing page](https://aws.amazon.com/ec2/pricing/on-demand/)
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+## AMI
 
-## Prerequisite
+- What’s an AMI – an image to use to create our instances
+- AMIs can be built for Linux or Windows machines
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+#### Why would you use a custom AMI?
+- Using a custom built AMI can provide the following advantages:
+- Pre-installed packages needed
+- Faster boot time (no need for long ec2 user data at boot time)
+- Machine comes configured with monitoring / enterprise software
+- Security concerns – control over the machines in the network
+- Control of maintenance and updates of AMIs over time
+- Active Directory Integration out of the box
+- Installing your app ahead of time (for faster deploys when auto-scaling)
+- Using someone else’s AMI that is optimised for running an app, DB, etc…
+- **AMI are built for a specific AWS region (!)** ***Not Globally available***
 
-## Use Case
-
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
-
-## Cloud Research
-
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
-
-## Try yourself
-
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
-
-### Step 1 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 1 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 3 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-## ☁️ Cloud Outcome
-
-✍️ (Result) Describe your personal outcome, and lessons learned.
-
-## Next Steps
-
-✍️ Describe what you think you think you want to do next.
-
-## Social Proof
-
-✍️ Show that you shared your process on Twitter or LinkedIn
-
-[link](link)
+## EC2 – Checklist
+- Know how to SSH into EC2 (and change .pem file permissions)
+- Know how to properly use security groups
+- Know the fundamental differences between private vs public vs elastic IP
+- Know how to use User Data to customize your instance at boot time
+- Know that you can build custom AMI to enhance your OS
+- EC2 instances are billed by the second

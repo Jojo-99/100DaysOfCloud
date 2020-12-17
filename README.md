@@ -19,7 +19,7 @@ At the end of the challenge, I want to gain the Solutions Architect Associate ce
 - [X] ☁️ 2 > [Security Groups, IPs](Journey/002/Readme.md)
 - [x] ☁️ 3 > [EC2 User Data & Instance Types](Journey/003/Readme.md)
 - [x] ☁️ 4 > [Elastic Network Interfaces (ENI)](Journey/004/Readme.md)
-- [ ] ☁️ 5 > [](Journey/005/Readme.md)
+- [x] ☁️ 5 > [IAM + EC2 Wrap up](Journey/005/Readme.md)
 - [ ] ☁️ 6 > [](Journey/006/Readme.md)
 - [ ] ☁️ 7 > [](Journey/007/Readme.md)
 - [ ] ☁️ 8 > [](Journey/008/Readme.md)
