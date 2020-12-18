@@ -1,52 +1,26 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
+# Day 6 - Scalability & High Availability For EC2
 
-# New post title here
+### Scalability
+- Scalability means that an application / system can handle greater loads
+  by adapting.
+  - Vertical Scaling: Increase instance size (= scale up / down)
+    - From: t2.nano - 0.5G of RAM, 1 vCPU
+    - To: u-12tb1.metal – 12.3 TB of RAM, 448 vCPUs
+    - Vertical scalability is very common for non distributed systems, such as a database.
+    - RDS, ElastiCache are services that can scale vertically. 
+    - There’s usually a limit to how much you can vertically scale (hardware limit)
+  - Horizontal Scaling: Increase number of instances (= scale out / in)
+    - Auto Scaling Group
+    - Load Balancer
 
-## Introduction
+### High Availability
+- High Availability usually goes hand in hand with *horizontal scaling*
+- High availability means running your application / system in at least 2 data
+centers (== Availability Zones)
+- The **goal** of high availability is to survive a data center loss
+- The high availability can be passive (for RDS Multi AZ for example)
+- The high availability can be active (for horizontal scaling)
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
-
-## Prerequisite
-
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
-
-## Use Case
-
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
-
-## Cloud Research
-
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
-
-## Try yourself
-
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
-
-### Step 1 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 1 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 3 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-## ☁️ Cloud Outcome
-
-✍️ (Result) Describe your personal outcome, and lessons learned.
-
-## Next Steps
-
-✍️ Describe what you think you think you want to do next.
-
-## Social Proof
-
-✍️ Show that you shared your process on Twitter or LinkedIn
-
-[link](link)
+- High Availability: Run instances for the same application across multi AZ
+  - Auto Scaling Group multi AZ
+  - Load Balancer multi AZ
