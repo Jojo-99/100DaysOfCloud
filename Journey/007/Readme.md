@@ -1,52 +1,62 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
+# Day 7- 
 
-# New post title here
+## High Availability & Scalability For EC2
+-**Vertical Scaling**: Increase instance size (= scale up / down)
+    - From: t2.nano - 0.5G of RAM, 1 vCPU
+    - To: u-12tb1.metal – 12.3 TB of RAM, 448 vCPUs
 
-## Introduction
+- **Horizontal Scaling**: Increase number of instances (= scale out / in)
+    - Auto Scaling Group
+    - Load Balancer
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+- **High Availability**: Run instances for the same application across multi AZ
+    - Auto Scaling Group multi AZ
+    - Load Balancer multi AZ
+    
+## Load balancing
+Load balancers are servers that forward internet traffic to multiple
+servers (EC2 Instances) downstream.
+- Spread load across multiple downstream instances 
+  
+- Expose a single point of access (DNS) to your application
 
-## Prerequisite
+- Seamlessly handle failures of downstream instances
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+- Do regular health checks to your instances
 
-## Use Case
+- Provide SSL termination (HTTPS) for your websites
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
+- Enforce stickiness with cookies
 
-## Cloud Research
+- High availability across zones
 
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+- Separate public traffic from private traffic
 
-## Try yourself
+### Health Checks are crucial for Load Balancers
+- They enable the load balancer to know if instances it forwards traffic to
+are available to reply to requests
+- The health check is done on a port and a route (/health is common)
+- If the response is not 200 (OK), then the instance is unhealthy
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+## Types of load balancer on AWS
+- **Classic Load Balancer** (**v1** - old generation) – 2009
+    - HTTP, HTTPS, TCP
+  ![](CLB.png)
+- **Application Load Balancer** (**v2** - new generation) – 2016
+    - HTTP, HTTPS, WebSocket
+- **Network Load Balancer** (**v2** - new generation) – 2017
+    - TCP, TLS (secure TCP) & UDP
+- Overall, it is recommended to use the newer / v2 generation load balancers as they
+provide more features
+- You can setup **internal (private)** or **external (public)** ELBs
 
-### Step 1 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 1 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 3 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-## ☁️ Cloud Outcome
-
-✍️ (Result) Describe your personal outcome, and lessons learned.
-
-## Next Steps
-
-✍️ Describe what you think you think you want to do next.
-
-## Social Proof
-
-✍️ Show that you shared your process on Twitter or LinkedIn
-
-[link](link)
+### Load Balancer Good to Know
+- LBs can scale but not instantaneously – contact AWS for a “warm-up”
+- Troubleshooting
+    - 4xx errors are client induced errors
+    - 5xx errors are application induced errors
+    - Load Balancer Errors 503 means at capacity or no registered target (it's overloading)
+    - If the LB can’t connect to your application, check your security groups!
+- Monitoring
+    - ELB access logs will log all access requests (so you can debug per request)
+    - CloudWatch Metrics will give you aggregate statistics (ex: connections count)
