@@ -1,52 +1,106 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
+# Day 10 - Elastic Load Balancing
 
-# New post title here
+## Load Balancer Stickiness
+- It is possible to implement stickiness so that the same client is always redirected to the same instance behind a load balancer
 
-## Introduction
+- This works for Classic Load Balancers & Application Load Balancers
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+- The “cookie” used for stickiness has an expiration date you control
 
-## Prerequisite
+- Use case: make sure the user doesn’t lose his session data
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+- Enabling stickiness may bring imbalance to the load over the backend EC2 instances
 
-## Use Case
+- If Application Load Balancer, the stickiness setting is going to be at the target group level
+#### stickiness is very helpful if you want the same request originating from the same client, to go to the same target Ec2 instance
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
+## Cross-Zone Load Balancing
+- With Cross Zone Load Balancing: each load balancer instance distributes evenly across all registered instances in all AZ
+- Otherwise, each load balancer node distributes requests evenly across the registered instances in its Availability Zone only.
 
-## Cloud Research
+![](Cross-Zone%20Load%20Balancing.png)
 
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+## SSL Certificates
+### SSL/TLS - Basics
+- An SSL Certificate allows traffic between your clients and your load balancer
+  to be encrypted in transit (in-flight encryption)
+  
+- SSL refers to Secure Sockets Layer, used to encrypt connections
+  
+- TLS refers to Transport Layer Security, which is a newer version
+  
+- Nowadays, TLS certificates are mainly used, but people still refer as SSL
 
-## Try yourself
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+- Public SSL certificates are issued by Certificate Authorities (CA)
+  
+- Comodo, Symantec, GoDaddy, GlobalSign, Digicert, Letsencrypt, etc…
 
-### Step 1 — Summary of Step
 
-![Screenshot](https://via.placeholder.com/500x300)
+#### SSL certificates have an expiration date (you set) and must be renewed
 
-### Step 1 — Summary of Step
+![](Load%20Balancer%20-%20SSL%20Certificates.png)
+1. HTTPS, because it's using SSL certificates and it's encrypted, it's secure, and it connects over the public internet to your load balancer.
+2. And internally, your load balancer does something called SSL certificate termination.
+3. In the backend, it can talk to your EC2 instance, using HTTP, so not encrypted, but the traffic goes over your VPC, which is private traffic network, and that is somewhat secure.
 
-![Screenshot](https://via.placeholder.com/500x300)
 
-### Step 3 — Summary of Step
+- The load balancer uses an X.509 certificate (SSL/TLS server certificate)
+- You can manage certificates using ACM (AWS Certificate Manager)
+- You can create upload your own certificates alternatively
+- HTTPS listener:
+  - You must specify a default certificate
+  - You can add an optional list of certs to support multiple domains
+  - Clients can use SNI (Server Name Indication) to specify the hostname they reach
+  - Ability to specify a security policy to support older versions of SSL / TLS (legacy clients)
+  
+### SSL – Server Name Indication (SNI)
+- SNI solves the problem of loading multiple SSL certificates onto one web server (to serve multiple websites)
+- It’s a “newer” protocol, and requires the client to indicate the hostname of the target server in the initial SSL handshake
+- The server will then find the correct certificate, or return the default one
 
-![Screenshot](https://via.placeholder.com/500x300)
+Note:
+- Only works for **ALB & NLB** (newer generation), **CloudFront**
+- Does not work for CLB (older gen)
 
-## ☁️ Cloud Outcome
+### Warp Up - Elastic Load Balancers – SSL Certificates
+##### Classic Load Balancer (v1)
+- Support only one SSL certificate
+- Must use multiple CLB for multiple hostname with multiple SSL certificates
+#### Application Load Balancer & Network Load Balancer (v2)
+- Supports multiple listeners with multiple SSL certificates
+- Uses Server Name Indication (SNI) to make it work
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
+## ELB – Connection Draining
 
-## Next Steps
+- Feature naming:
+  - CLB: Connection Draining
+  - Target Group: Deregistration Delay (for ALB & NLB)
 
-✍️ Describe what you think you think you want to do next.
+- Time to complete “in-flight requests” while
+the instance is de-registering or unhealthy
+- Stops sending new requests to the instance
+which is de-registering
+- Between 1 to 3600 seconds (1 hour), default is 300
+seconds
+- Can be disabled (set value to 0)
+- Set to a low value if your requests are short
 
-## Social Proof
+![](Connection%20Draining.png)
+If EC2 instance is being terminated or is unhealthy, it is go into draining mode.
 
-✍️ Show that you shared your process on Twitter or LinkedIn
+During the draining mode, the existing connections will be waited for the duration of the connection draining period to be completed.
 
-[link](link)
+By default that is 300 seconds. That means that any new connection that is made by the users into the ELB will be redirected to the other EC2 instances available and are being registered already registered to your ELB.
+
+So your deregistration delay is going to be 300 seconds by default, but you can set it anywhere between one second to 3,600 seconds which is one hour.
+
+And you can also disable it by setting the value to zero.
+
+So if you have a web application that does very short request maybe one to five seconds, then you want to set your deregistration delay to something that's going to be quite low maybe 10, 20 seconds because you don't expect any connection any request to last any longer than 20 seconds.
+
+But if your EC2 instances are very slow to respond, maybe to take minutes because they have a lot of data processing to do. Then you do want to set your connection draining something a bit higher to give a chance to these requests that are already in-flight to be completed.
+
+If you don't want that behavior at all then you can just disable it set the value to zero and in case a connection is dropped while your EC2 instance is being killed, then users will retrieve an error.
+
+And maybe it's the role of your users to just retry that request up until it succeeds by being redirected to a new EC2 instance okay.
