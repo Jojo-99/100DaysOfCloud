@@ -1,15 +1,15 @@
 # Day 7- Load Balancer
 
 ## High Availability & Scalability For EC2
-- **Vertical Scaling**: Increase instance size (= scale up / down)
+1. **Vertical Scaling**: Increase instance size (= scale up / down)
     - From: t2.nano - 0.5G of RAM, 1 vCPU
     - To: u-12tb1.metal – 12.3 TB of RAM, 448 vCPUs
 
-- **Horizontal Scaling**: Increase number of instances (= scale out / in)
+2. **Horizontal Scaling**: Increase number of instances (= scale out / in)
     - Auto Scaling Group
     - Load Balancer
 
-- **High Availability**: Run instances for the same application across multi AZ
+3. **High Availability**: Run instances for the same application across multi AZ
     - Auto Scaling Group multi AZ
     - Load Balancer multi AZ
     
@@ -40,15 +40,27 @@ are available to reply to requests
 
 ## Types of load balancer on AWS
 - **Classic Load Balancer** (**v1** - old generation) – 2009
-    - HTTP, HTTPS, TCP
-  ![](CLB.png)
 - **Application Load Balancer** (**v2** - new generation) – 2016
-    - HTTP, HTTPS, WebSocket
 - **Network Load Balancer** (**v2** - new generation) – 2017
-    - TCP, TLS (secure TCP) & UDP
 - Overall, it is recommended to use the newer / v2 generation load balancers as they
 provide more features
 - You can setup **internal (private)** or **external (public)** ELBs
+
+
+- One public IPv4 address per AZ
+    - Network Load Balancers expose a public static IP per AZ and allows assigning Elastic IP per AZ. Good for network whitelisting.
+    - ALB and CLB is assigned a public IPv4 IP address per AZ, but it is not static. You should use the domain name to access the ALB/CLB.
+
+
+- Supported protocols
+  - ALB supports: HTTP, HTTPS, WebSocket
+  - NLB supports: TCP, TLS(secure TCP), UDP.
+  - CLB supports: HTTP, HTTPS, TCP
+
+
+- Security Groups
+    - NLB does NOT have a security group. You just need to allow traffic from NLB to your targets by allowing its IPv4 addresses.
+    - ALB and CLB have security groups. You put them in a security group, and allow traffic from ELB security group to targets' security group.
 
 ### Load Balancer Good to Know
 - LBs can scale but not instantaneously – contact AWS for a “warm-up”

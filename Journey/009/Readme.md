@@ -12,7 +12,6 @@ Network load balancers (**Layer 4**) allow to:
 - NLB are used for extreme performance, TCP or UDP traffic
 - Not included in the AWS free tier
 
-![](NLB.png )
 
 
 

@@ -19,7 +19,6 @@ Application load balancers is **Layer 7** (HTTP)
 - Has a port mapping feature to redirect to a dynamic port in ECS
 - In comparison, we’d need multiple Classic Load Balancer per application
 
-![](Traffic.png)
 
 ###Application Load Balancer (v2) Target Groups
 - EC2 instances (can be managed by an Auto Scaling Group) – HTTP

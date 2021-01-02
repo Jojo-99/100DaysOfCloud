@@ -18,7 +18,9 @@
 - With Cross Zone Load Balancing: each load balancer instance distributes evenly across all registered instances in all AZ
 - Otherwise, each load balancer node distributes requests evenly across the registered instances in its Availability Zone only.
 
-![](Cross-Zone%20Load%20Balancing.png)
+1. CLB: disabled by default, no charge if enable
+2. ALB: always on, cannot disable, no charge
+3. NLB: disabled by default, get charged if enable
 
 ## SSL Certificates
 ### SSL/TLS - Basics
