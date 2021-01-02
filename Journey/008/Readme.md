@@ -1,52 +1,32 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
+# Day 8 - Application Load Balancer
 
-# New post title here
+## Application Load Balancer (v2)
+Application load balancers is **Layer 7** (HTTP)
+- Load balancing to multiple HTTP applications across machines
+(target groups)
+- Load balancing to multiple applications on the same machine
+(ex: containers)
+- Support for HTTP/2 and WebSocket
+- Support redirects (from HTTP to HTTPS for example)
 
-## Introduction
+### Routing tables to different target groups:
+- Routing based on path in URL (example.com ***/users*** & example.com ***/posts***)
+- Routing based on hostname in URL (***one.example.com*** & ***other.example.com***)
+- Routing based on Query String, Headers (example.com/users?***id=123&order=false***)
+###
+- ALB are a great fit for micro services & container-based application
+(example: Docker & Amazon ECS)
+- Has a port mapping feature to redirect to a dynamic port in ECS
+- In comparison, we’d need multiple Classic Load Balancer per application
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+![](Traffic.png)
 
-## Prerequisite
+###Application Load Balancer (v2) Target Groups
+- EC2 instances (can be managed by an Auto Scaling Group) – HTTP
+- ECS tasks (managed by ECS itself) – HTTP
+- Lambda functions – HTTP request is translated into a JSON event
+- IP Addresses – must be private IPs
+- ALB can route to multiple target groups
+- Health checks are at the target group level
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
-
-## Use Case
-
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
-
-## Cloud Research
-
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
-
-## Try yourself
-
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
-
-### Step 1 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 1 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 3 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-## ☁️ Cloud Outcome
-
-✍️ (Result) Describe your personal outcome, and lessons learned.
-
-## Next Steps
-
-✍️ Describe what you think you think you want to do next.
-
-## Social Proof
-
-✍️ Show that you shared your process on Twitter or LinkedIn
-
-[link](link)
+![](Application%20Load%20Balancer.png)

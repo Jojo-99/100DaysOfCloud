@@ -21,8 +21,8 @@ At the end of the challenge, I want to gain the Solutions Architect Associate ce
 - [x] ☁️ 4 > [Elastic Network Interfaces (ENI)](Journey/004/Readme.md)
 - [x] ☁️ 5 > [Wrap up : IAM + EC2 ](Journey/005/Readme.md)
 - [x] ☁️ 6 > [Scalability & High Availability For EC2](Journey/006/Readme.md)
-- [ ] ☁️ 7 > [](Journey/007/Readme.md)
-- [ ] ☁️ 8 > [](Journey/008/Readme.md)
+- [x] ☁️ 7 > [Load Balancer](Journey/007/Readme.md)
+- [x] ☁️ 8 > [Application Load Balancer](Journey/008/Readme.md)
 - [ ] ☁️ 9 > [](Journey/009/Readme.md)
 - [ ] ☁️ 10 > [](Journey/010/Readme.md)
 
