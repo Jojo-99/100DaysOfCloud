@@ -1,7 +1,7 @@
 # Day 7- Load Balancer
 
 ## High Availability & Scalability For EC2
--**Vertical Scaling**: Increase instance size (= scale up / down)
+- **Vertical Scaling**: Increase instance size (= scale up / down)
     - From: t2.nano - 0.5G of RAM, 1 vCPU
     - To: u-12tb1.metal – 12.3 TB of RAM, 448 vCPUs
 
