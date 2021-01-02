@@ -1,4 +1,4 @@
-# Day 7- 
+# Day 7- Load Balancer
 
 ## High Availability & Scalability For EC2
 -**Vertical Scaling**: Increase instance size (= scale up / down)
@@ -60,3 +60,4 @@ provide more features
 - Monitoring
     - ELB access logs will log all access requests (so you can debug per request)
     - CloudWatch Metrics will give you aggregate statistics (ex: connections count)
+  
