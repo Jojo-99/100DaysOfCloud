@@ -1,52 +1,32 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
+# Day 13 - 
 
-# New post title here
+## AWS RDS  (Relational Database Service)
+- It’s a managed DB service for DB use SQL as a query language
+- Multi AZ setup for DR (Disaster Recovery)
+- Storage backed by EBS (gp2 or io1)
+- Read replicas for improved read performance
+- Continuous backups and restore to specific timestamp (Point in Time Restore)
+- You cannot SSH into your RDS instance - because RDS is a managed service, we don't have access to the underlying EC2 instance
 
-## Introduction
+### RDS Backups
+#### Automated backups:
+- automatically enabled
+- Daily full backup of the database
+- Transaction logs are backed-up by RDS every 5 minutes
+- => ability to restore to any point in time (from oldest backup to 5 minutes ago)
+- 7 day retention by default, up to 35 days
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+#### DB Snapshots:
+- Manually triggered by the user
+- Retention of backup for as long as you want
 
-## Prerequisite
-
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
-
-## Use Case
-
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
-
-## Cloud Research
-
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
-
-## Try yourself
-
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
-
-### Step 1 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 1 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 3 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-## ☁️ Cloud Outcome
-
-✍️ (Result) Describe your personal outcome, and lessons learned.
-
-## Next Steps
-
-✍️ Describe what you think you think you want to do next.
-
-## Social Proof
-
-✍️ Show that you shared your process on Twitter or LinkedIn
-
-[link](link)
+####  RDS Read Replicas
+- Up to 5 Read Replicas
+- Within same AZ, Cross AZ or Cross Region
+- Replication is ASYNC, so reads are eventually consistent
+- Can be a Disaster Recovery solution if put in different AZ/region
+    - One DNS name – automatic app failover to standby
+        - SYNC replication
+        - 
+- Read replicas are used for SELECT (=read) only kind of statements (not INSERT, UPDATE, DELETE)
+- Putting read replica in **same AZ** helps **saving on your data transmission cost**
