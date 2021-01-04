@@ -1,52 +1,24 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
+# Solutions Architect Associate Prepare - Day 1
 
-# New post title here
+## EC2 Spot Instance 
+More details go back to Day 3
+- The hourly spot price varies based on offer and capacity
+- If the current spot price > your max price you can choose to stop or terminate your
+  instance with a 2 minutes grace period.
+  
+**Spot  Block**: “block” spot instance during a specified time frame (1 to 6 hours) without interruptions
 
-## Introduction
+### How to terminate Spot Instances?
+- You can only cancel Spot Instance requests that are **open**, **active**, or **disabled**
+- **Cancelling a Spot Request does not terminate instances**
+  1. First, cancel a Spot Request
+  2. then terminate the associated Spot Instances
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
-
-## Prerequisite
-
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
-
-## Use Case
-
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
-
-## Cloud Research
-
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
-
-## Try yourself
-
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
-
-### Step 1 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 1 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 3 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-## ☁️ Cloud Outcome
-
-✍️ (Result) Describe your personal outcome, and lessons learned.
-
-## Next Steps
-
-✍️ Describe what you think you think you want to do next.
-
-## Social Proof
-
-✍️ Show that you shared your process on Twitter or LinkedIn
-
-[link](link)
+#### Spot Request
+- Includes: Maximum price, Desired number of instances, launch specification (AMI...), request type, valid from, valid until
+  
+- Two types for post instances: 
+  - one-time
+    1. as soon as spot request is fulfilled, instances are going to be launched.
+    2. then spot request will be go away / invalid
+  - persistent
