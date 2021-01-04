@@ -8,7 +8,7 @@ I am a Master of Information Technology student at The University of Auckland. I
 
 The reason that why I start this challenge is I want to improve my Cloud knowledge and get ready for future work. 
 
-At the end of the challenge, I want to gain the Solutions Architect Associate certificate. 
+At the end of the challenge, I want to gain the Solutions Architect Associate certificate & Developer Associate. 
 
 
 - [LinkedIn: jojo-dong](https://www.linkedin.com/in/jojo-dong-1a1a171b3/)
@@ -30,7 +30,7 @@ At the end of the challenge, I want to gain the Solutions Architect Associate ce
 
 - [x] ☁️ 11 > [Auto Scaling Group](Journey/011/Readme.md)
 - [x] ☁️ 12 > [EFS,EBS & Instance Store](Journey/012/Readme.md)
-- [ ] ☁️ 13 > [](Journey/013/Readme.md)
+- [x] ☁️ 13 > [RDS & Amazon Aurora](Journey/013/Readme.md)
 - [ ] ☁️ 14 > [](Journey/014/Readme.md)
 - [ ] ☁️ 15 > [](Journey/015/Readme.md)
 - [ ] ☁️ 16 > [](Journey/016/Readme.md)
