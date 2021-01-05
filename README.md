@@ -32,7 +32,7 @@ At the end of the challenge, I want to gain the Solutions Architect Associate ce
 - [x] ☁️ 12 > [EFS,EBS & Instance Store](Journey/012/Readme.md)
 - [x] ☁️ 13 > [RDS & Amazon Aurora](Journey/013/Readme.md)
 - [x] ☁️ 14 > [SAA Prepare - Day 1 - Spot Instance, AMI, Placement Groups, EC2 Hibernate](Journey/014/Readme.md)
-- [ ] ☁️ 15 > [](Journey/015/Readme.md)
+- [x] ☁️ 15 > [SAA Prepare - Day 2: ASG & EBS](Journey/015/Readme.md)
 - [ ] ☁️ 16 > [](Journey/016/Readme.md)
 - [ ] ☁️ 17 > [](Journey/017/Readme.md)
 - [ ] ☁️ 18 > [](Journey/018/Readme.md)

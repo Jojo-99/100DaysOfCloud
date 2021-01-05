@@ -1,4 +1,4 @@
-# SAA Prepare - Day 2
+# SAA Prepare - Day 2: ASG & EBS
 ## Exam Tips - ASG for Solutions Architects
 ### ASG Default Termination Policy (simplified version):
 1. Find the AZ which has the most number of instances
