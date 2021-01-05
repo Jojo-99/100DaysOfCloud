@@ -118,7 +118,7 @@ More details go back to [Day 3- Instance Types](Journey/003/Readme.md)
 ! Cluster group is available only for high instance type 
   
 #### Spread
-![](spread.png)
+![](Spread.png)
 - Pros:
   - Spreads instances across underlying physical hardware across Availability Zones (AZ)
   - Reduced risk is simultaneous failure
@@ -144,7 +144,7 @@ More details go back to [Day 3- Instance Types](Journey/003/Readme.md)
 - The root EBS volume must be encrypted
 
 #### The working process of Hibernate
-![](hibernate.png)
+![](Hibernate.png)
 
 #### Use cases:
   - long-running processing
