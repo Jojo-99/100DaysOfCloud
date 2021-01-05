@@ -31,7 +31,7 @@ At the end of the challenge, I want to gain the Solutions Architect Associate ce
 - [x] ☁️ 11 > [Auto Scaling Group](Journey/011/Readme.md)
 - [x] ☁️ 12 > [EFS,EBS & Instance Store](Journey/012/Readme.md)
 - [x] ☁️ 13 > [RDS & Amazon Aurora](Journey/013/Readme.md)
-- [x] ☁️ 14 > [Solutions Architect Associate Prepare - Day 1](Journey/014/Readme.md)
+- [x] ☁️ 14 > [Solutions Architect Associate Prepare - Day 1 -EC2 Spot Instance,AMI,](Journey/014/Readme.md)
 - [ ] ☁️ 15 > [](Journey/015/Readme.md)
 - [ ] ☁️ 16 > [](Journey/016/Readme.md)
 - [ ] ☁️ 17 > [](Journey/017/Readme.md)
