@@ -93,7 +93,7 @@ More details go back to [Day 3- Instance Types](Journey/003/Readme.md)
 - If you copy an AMI that has been shared with your account, you are the owner of the target AMI in your account.
 - To copy an AMI that was shared with you from another account, the owner of the source AMI must grant you read permissions for the storage that backs the AMI, either the associated EBS snapshot(for an Amazon EBS-backed AMI) or an associated S3 bucket (for an instance store-backed AMI).
   
-#### Exam Tips:
+### Exam Tips:
 - You **can't copy** an AMI with an associated **billingProduct** code that was shared with you from another account. This includes Windows AMIs and AMIs from the AWS Marketplace. 
    - How to copy a shared AMI with a billingProduct code? 
      1. launch an EC2 instance in your account using the shared AMI 
