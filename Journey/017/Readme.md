@@ -42,7 +42,7 @@
 - Possibility of integrating the health check with CloudWatch
 - Health checks can be linked to Route53 DNS queries
 
-### Route53 as a Registrar
+## Route53 as a Registrar
 - A **domain name registrar** is an organization that manages the
 reservation of Internet domain names
 
