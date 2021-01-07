@@ -167,7 +167,8 @@
 - `http://example.com/app1` and `http://example.com/app2` are the same origin. Same scheme, same host(domain), same port.
 - `http://www.example.com` and `http://other.example.com` are different regions: different hosts.
 - The requests won't be filled unless the request-receiving side origin allows for the requests, using **CORS headers** (Access-Control-Allow-Origin)
-  <img src="CORS.png" alt="" width="500px"/>
+  
+<img src="CORS.png" alt="" width="800px"/>
   
 ### Popular exam question
 - If a client does a cross-origin request on our S3 bucket, we need to enable the correct CORS headers
