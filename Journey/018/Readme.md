@@ -173,3 +173,20 @@
 ### Popular exam question
 - If a client does a cross-origin request on our S3 bucket, we need to enable the correct CORS headers
 - Can allow for a specific origin or for * (all origins)
+
+<img src="S3 CORS.png" alt="" width="800px"/>
+
+- If website number one needs to access a resource on website number two, through a web browser, then website number two needs to have a **CORS setting** to allow the request to be done. Otherwise the web browser is going to block it.
+
+## Amazon S3 - Consistency Model
+**There is no way to request "strong consistency"**.
+
+- Read-after-write consistency: 
+  - As soon as a new object is written, we can retrieve it
+    - `PUT 200` -> `GET 200`
+  - Except: `GET 404` -> `PUT 200` -> `GET 404` – **eventually consistent**
+- Eventual consistency:
+  - If we read an object after updating, we might get the older version
+    - `PUT 200` -> `PUT 200` -> `GET 200 with older version`
+  - If we delete an object, we might still be able to retrieve it for a short time
+    - `DELETE 200` -> `GET 200`
