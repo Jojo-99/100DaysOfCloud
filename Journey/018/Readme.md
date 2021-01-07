@@ -1,4 +1,4 @@
-# 
+# SAA Prepare - Day 5: Beanstalk & S3
 ## Instantiating Applications quickly
 - EC2 Instances:
     - Use a Golden AMI: Install your applications, OS dependencies etc.. beforehand and launch your EC2 instance from the Golden AMI
