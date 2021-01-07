@@ -34,7 +34,8 @@ At the end of the challenge, I want to gain the Solutions Architect Associate ce
 - [x] ☁️ 14 > [SAA Prepare - Day 1 - Spot Instance, AMI, Placement Groups, EC2 Hibernate](Journey/014/Readme.md)
 - [x] ☁️ 15 > [SAA Prepare - Day 2: ASG & EBS](Journey/015/Readme.md)
 - [x] ☁️ 16 > [SAA Prepare - Day 3: ElastiCache & Route 53](Journey/016/Readme.md)
-- [ ] ☁️ 17 > [](Journey/017/Readme.md)
+- [x] ☁️ 17 > [SAA Prepare - Day 4: Route53 routing policies & Health Checks
+  ](Journey/017/Readme.md)
 - [ ] ☁️ 18 > [](Journey/018/Readme.md)
 - [ ] ☁️ 19 > [](Journey/019/Readme.md)
 - [ ] ☁️ 20 > [](Journey/020/Readme.md)

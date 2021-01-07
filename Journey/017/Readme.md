@@ -1,52 +1,54 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
+# SAA Prepare - Day 4: Route53 routing policies & Health Checks
 
-# New post title here
+## Route53 routing policies
+### Simple Routing Policy
+- Maps a hostname to another hostname
+- Use when you need to redirect to a single resource
+- You can’t attach health checks to simple routing policy
+- If multiple values are returned, a random one is chosen by the client - client load balancing
 
-## Introduction
+### Weighted Routing Policy
+- Control the % of the requests that go to specific endpoint
+- Helpful to test 1% of traffic on new app version for example
+- Helpful to split traffic between two regions
+- Can be associated with Health Checks
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+### Latency Routing Policy
+- Redirect to the server that has the least latency close to us
+- Latency is evaluated in terms of user to designated AWS Region
 
-## Prerequisite
+### Failover Routing Policy
+- oute 53 will have a health check pointing to the primary, associated with the primary record. In case that health check fails, automatically, Route 53 will failover to the secondary instance when there is a DNS query.
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+### Geo Location Routing Policy
+- **based on user location**
+- Can specify traffic from specify countries go to specific IP 
+- Should create a “default” policy for that non-specify countries (in case there’s no match on
+  location)
+  
+### Multi Value Routing Policy
+- Use when routing traffic to **multiple resources**
+- Want to associate a Route 53 health checks with records
+- Up to 8 healthy records are returned for each Multi Value query
+- Multi Value is not a substitute for having an ELB, they are different
 
-## Use Case
+## Route 53 Health Checks
+- Have X health checks failed => unhealthy (default 3)
+- After X health checks passed => health (default 3)
+- Default Health Check Interval: 30s (can set to 10s – **higher cost**)
+    - About 15 health checkers will check the endpoint health (30s)
+    - => one request every 2 seconds on average
+- Can have HTTP, TCP and HTTPS health checks (no SSL verification)
+- Possibility of integrating the health check with CloudWatch
+- Health checks can be linked to Route53 DNS queries
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
+### Route53 as a Registrar
+- A **domain name registrar** is an organization that manages the
+reservation of Internet domain names
 
-## Cloud Research
-
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
-
-## Try yourself
-
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
-
-### Step 1 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 1 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 3 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-## ☁️ Cloud Outcome
-
-✍️ (Result) Describe your personal outcome, and lessons learned.
-
-## Next Steps
-
-✍️ Describe what you think you think you want to do next.
-
-## Social Proof
-
-✍️ Show that you shared your process on Twitter or LinkedIn
-
-[link](link)
+### 3rd Party Registrar with AWS Route 53
+- If you buy your domain on 3rd party website, you can still use Route53.
+    1. Create a Hosted Zone in Route 53
+    2. Update NS (name server) Records on 3rd party website to use Route 53 name servers
+- Domain Registrar != DNS
+- (But each domain registrar usually comes with some DNS features)
