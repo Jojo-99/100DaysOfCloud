@@ -263,7 +263,7 @@ Help you upload files into s3 from everywhere in the world through CloudFront
 
 ## AWS Global Accelerator
 - Leverage the AWS internal network to route to your application
-- 2 **Anycast IP** are created for your application
+- **2 Anycast IP (static)** are created for your application
 - The Anycast IP send traffic directly to Edge Locations
 - The Edge locations send
 
