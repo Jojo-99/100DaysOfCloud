@@ -37,8 +37,8 @@ At the end of the challenge, I want to gain the Solutions Architect Associate ce
 - [x] ☁️ 17 > [SAA Prepare - Day 4: Route53 routing policies & Health Checks
   ](Journey/017/Readme.md)
 - [x] ☁️ 18 > [SAA Prepare - Day 5: Beanstalk & S3](Journey/018/Readme.md)
-- [x] ☁️ 19 > [SAA Prepare - Day 6: Programmatically access AWS](Journey/019/Readme.md)
-- [ ] ☁️ 20 > [](Journey/020/Readme.md)
+- [x] ☁️ 19 > [SAA Prepare - Day 6: Programmatically access AWS: AWS CLI, SDK, IAM Roles & Policies](Journey/019/Readme.md)
+- [x] ☁️ 20 > [SAA Prepare - Day 7: Advanced Amazon S3 & Athena, CloudFront & AWS Global Accelerator](Journey/020/Readme.md)
 
 ## Crossing the bridge
 
