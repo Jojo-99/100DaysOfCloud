@@ -68,7 +68,7 @@
 - Volumes / Block Storage / iSCSI => Volume gateway(backed by S3 with EBS snapshots)
 - VTL Tape solution / Backup with iSCSI = > Tape Gateway(backed by S3 and Glacier)
 
-###Storage Gateway File Gateway – Hardware appliance
+### Storage Gateway File Gateway – Hardware appliance
 - Need virtualization to use a file gateway 
 - Otherwise, you can use a File Gateway Hardware Appliance (buy it on amazon.com)
 - Helpful for daily NFS backups in small data centers
@@ -113,10 +113,10 @@ If you have a small data center with no visualization capability and you still n
 
 
 
-it’s better to **decouple** your applications,
-    - using SQS: queue model
-    - using SNS: pub/sub model
-    - using Kinesis: real-time streaming model
+## it’s better to **decouple** your applications
+- using SQS: queue model
+- using SNS: pub/sub model
+- using Kinesis: real-time streaming model
 - These services can scale independently from our application
 
 ## Amazon SQS – Standard Queue
@@ -264,8 +264,6 @@ Using SNS to send the same message into many different SQS queues
 - Great for “real-time” big data
 - Great for streaming processing frameworks (Spark, NiFi, etc…)
 - Data is **automatically replicated to 3 AZ**
-
-
 - Kinesis Streams (main focus on the exam): low latency streaming ingest at scale
 - Kinesis Analytics: perform real-time analytics on streams using SQL
 - Kinesis Firehose: load streams into S3, Redshift, ElasticSearch…
