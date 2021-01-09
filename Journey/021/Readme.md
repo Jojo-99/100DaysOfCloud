@@ -322,7 +322,7 @@ Using SNS to send the same message into many different SQS queues
 
 ## AWS Kinesis Data Firehose
 
-<img src="Kinesis%20Data%20Firehose%20Diagram.png" alt="" width="800px">
+<img src="Kinesis%20Data%20Firehose%20Diagram.png" alt="" width="600px">
 
 - Fully Managed Service, no administration, automatic scaling, serverless
 - Load data into **Redshift** / **Amazon S3** / **ElasticSearch** / **Splunk**
@@ -367,7 +367,7 @@ Using SNS to send the same message into many different SQS queues
 
 ## SQS vs SNS vs Kinesis
 
-<img src="SQS%20vs%20SNS%20vs%20Kinesis.png" alt="" width="800px">
+<img src="SQS%20vs%20SNS%20vs%20Kinesis.png" alt="" width="1000px">
 
 ## Amazon MQ
 - SQS, SNS are “cloud-native” services, and they’re using proprietary protocols from AWS.
