@@ -42,7 +42,7 @@ At the end of the challenge, I want to gain the Solutions Architect Associate ce
 
 ## Crossing the bridge
 
-- [ ] ☁️ 21 > [](Journey/021/Readme.md)
+- [x] ☁️ 21 > [SAA Prepare - Day 8: Snowball, Storage Gateway, FSx, Decoupling applications: SQS, SNS, Kinesis, Active MQ](Journey/021/Readme.md)
 - [ ] ☁️ 22 > [](Journey/022/Readme.md)
 - [ ] ☁️ 23 > [](Journey/023/Readme.md)
 - [ ] ☁️ 24 > [](Journey/024/Readme.md)

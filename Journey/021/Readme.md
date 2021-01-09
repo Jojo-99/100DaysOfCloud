@@ -1,4 +1,4 @@
-# SAA Prepare - Day 8:
+# SAA Prepare - Day 8: Snowball, Storage Gateway, FSx, Decoupling applications: SQS, SNS, Kinesis, Active MQ
 
 ## Snowball
 - **Physical data transport solution** that helps moving **TBs or PBs** of data in or out of AWS
