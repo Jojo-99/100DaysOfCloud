@@ -39,7 +39,7 @@
 - Snowball cannot import to Glacier directly
 - You have to use **Amazon S3** first, and an **S3 lifecycle policy**
 
-## AWS Storage Gateway!
+## AWS Storage Gateway
 - Bridge between on-premise data and cloud data in S3
 - Use cases: disaster recovery, backup & restore, tiered storage
 
@@ -288,15 +288,15 @@ Using SNS to send the same message into many different SQS queues
 - Records are ordered per shard
 
 ### AWS Kinesis API – Put records
-• PutRecord API + **Partition key** that gets hashed
-• The same key goes to the same partition (helps with ordering for a specific key)
-• Messages sent get a “sequence number”
-• Choose a partition key that is highly distributed (helps prevent “hot partition” - if your key wasn't distributed, then all your data will go through the same shard and one shard will be overwhelmed)
-    • user_id if many users
-    • **Not** country_id if 90% of the users are in one country
-• Use Batching with PutRecords to reduce costs and increase throughput
-• **ProvisionedThroughputExceeded** if we go over the limits
-• Can use CLI, AWS SDK, or producer libraries from various frameworks
+- PutRecord API + **Partition key** that gets hashed
+- The same key goes to the same partition (helps with ordering for a specific key)
+- Messages sent get a “sequence number”
+- Choose a partition key that is highly distributed (helps prevent “hot partition” - if your key wasn't distributed, then all your data will go through the same shard and one shard will be overwhelmed)
+    - user_id if many users
+    - **Not** country_id if 90% of the users are in one country
+- Use Batching with PutRecords to reduce costs and increase throughput
+- **ProvisionedThroughputExceeded** if we go over the limits
+- Can use CLI, AWS SDK, or producer libraries from various frameworks
 
 ### AWS Kinesis API – Exceptions
 ### ProvisionedThroughputExceeded Exceptions
