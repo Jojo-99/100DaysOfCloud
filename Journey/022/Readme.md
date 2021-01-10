@@ -1,4 +1,4 @@
-# SAA Prepare - Day 9: AWS Lambda，DynamoDB，AWS API Gateway AWS Cognito， Serverless Architectures
+# SAA Prepare - Day 9: AWS Lambda，DynamoDB，AWS API Gateway AWS Cognito
 
 ## Serverless
 - Serverless does not mean there are no servers… it means you just don’t manage / provision / see them
@@ -267,9 +267,4 @@
 - SAM can help you to run Lambda, API Gateway, DynamoDB locally
 - SAM can use CodeDeploy to deploy Lambda functions
 
-## Serverless Architectures
-- Serverless **REST API**: HTTPS, API Gateway, Lambda, DynamoDB
-- Using **Cognito** to generate temporary credentials with **STS** to access S3 bucket with restricted policy. App users can **directly access AWS resources** this way. Pattern can be applied to **DynamoDB**, **Lambda**…
-- Caching the reads on DynamoDB using **DAX**
-- Caching the REST requests at the **API Gateway level**
-- Security for authentication and authorization with Cognito, STS
+
