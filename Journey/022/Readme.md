@@ -1,4 +1,4 @@
-# SAA Prepare - Day 9: AWS Lambda，DynamoDB，AWS API Gateway， AWS Cognito， Serverless Architectures
+# SAA Prepare - Day 9: AWS Lambda，DynamoDB，AWS API Gateway AWS Cognito， Serverless Architectures
 
 ## Serverless
 - Serverless does not mean there are no servers… it means you just don’t manage / provision / see them

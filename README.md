@@ -43,7 +43,7 @@ At the end of the challenge, I want to gain the Solutions Architect Associate ce
 ## Crossing the bridge
 
 - [x] ☁️ 21 > [Day 8: Snowball, Storage Gateway, FSx, Decoupling applications: SQS, SNS, Kinesis, Active MQ](Journey/021/Readme.md)
-- [x] ☁️ 22 > [Day 9: AWS Lambda，DynamoDB，AWS API Gateway， AWS Cognito， Serverless Architectures](Journey/022/Readme.md)
+- [x] ☁️ 22 > [Day 9: AWS Lambda，DynamoDB，AWS API Gateway AWS Cognito， Serverless Architectures](Journey/022/Readme.md)
 - [ ] ☁️ 23 > [](Journey/023/Readme.md)
 - [ ] ☁️ 24 > [](Journey/024/Readme.md)
 - [ ] ☁️ 25 > [](Journey/025/Readme.md)
