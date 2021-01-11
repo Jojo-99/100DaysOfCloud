@@ -46,7 +46,7 @@ At the end of the challenge, I want to gain the Solutions Architect Associate ce
 - [x] ☁️ 22 > [Day 9: AWS Lambda，DynamoDB，AWS API Gateway AWS Cognito](Journey/022/Readme.md)
 - [x] ☁️ 23 > [Day 10: Serverless Architectures](Journey/023/Readme.md)
 - [x] ☁️ 24 > [Day 11: Databases in AWS ](Journey/024/Readme.md)
-- [ ] ☁️ 25 > [](Journey/025/Readme.md)
+- [x] ☁️ 25 > [Day 12: AWS CloudWatch, CloudTrail & Config](Journey/025/Readme.md)
 - [ ] ☁️ 26 > [](Journey/026/Readme.md)
 - [ ] ☁️ 27 > [](Journey/027/Readme.md)
 - [ ] ☁️ 28 > [](Journey/028/Readme.md)
