@@ -1,7 +1,7 @@
 # SAA Prepare - Day 10: Serverless Architectures
 
 ## Serverless Architectures
-### Case 1 - Mobile application: MyTodoList
+## Case 1 - Mobile application: MyTodoList
 
 <img src="case1.png" alt="" width="800px">
 
@@ -16,7 +16,7 @@ Security for authentication and authorization with Cognito, STS
 - Caching the reads on DynamoDB using **DAX**
 - Caching the REST requests at the **API Gateway level**
 
-### Case 2 - Serverless hosted website: MyBlog.com
+## Case 2 - Serverless hosted website: MyBlog.com
 - S3 Signed URL is not efficient for global access, CloundFront is more efficient for distributing stuff globally
 #### ? Serving static content, globally, securely
 - static content being distributed using CloudFront with S3
@@ -34,7 +34,7 @@ Security for authentication and authorization with Cognito, STS
 <img src="case2.png" alt="" width="800px">
 
 
-### Case 3 - Micro Services architecture
+## Case 3 - Micro Services architecture
 
 <img src="case3.png" alt="" width="800px">
 
@@ -50,7 +50,7 @@ Security for authentication and authorization with Cognito, STS
   - Generated client SDK through Swagger integration for the API Gateway
 
 
-### Case 4 - Distributing paid content
+## Case 4 - Distributing paid content
 
 <img src="case4.png" alt="" width="800px">
 
@@ -66,7 +66,7 @@ Security for authentication and authorization with Cognito, STS
 - What about S3 Signed URL? They’re not efficient for global access
 
 
-### Case 5 - Software updates offloading
+## Case 5 - Software updates offloading
 **Q:** We have an application running on EC2, that distributes software updates once in a while. When a new software update is out, we get a lot of request and the content is distributed in mass over the network. It’s very costly. We don’t want to change our application, but want to optimize our cost and CPU, how can we do it?
 
 **A:** Put CloudFront in front of the ELB
@@ -79,7 +79,7 @@ Security for authentication and authorization with Cognito, STS
  Easy way to make an existing application more scalable and cheaper!
 
 
-### Case 6 - Big Data Ingestion Pipeline
+## Case 6 - Big Data Ingestion Pipeline
 <img src="case6.png" alt="" width="800px">
 
 We want the ingestion pipeline to be fully serverless
