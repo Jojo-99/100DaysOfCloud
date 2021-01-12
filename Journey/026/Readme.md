@@ -1,4 +1,4 @@
-# SAA Prepare - Day 13:
+# SAA Prepare - Day 13: Identity and Access Management (IAM) - Advanced
 
 ## AWS STS – Security Token Service
 - Allows to grant **limited and temporary access** to AWS resources.

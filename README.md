@@ -47,7 +47,7 @@ At the end of the challenge, I want to gain the Solutions Architect Associate ce
 - [x] ☁️ 23 > [Day 10: Serverless Architectures](Journey/023/Readme.md)
 - [x] ☁️ 24 > [Day 11: Databases in AWS ](Journey/024/Readme.md)
 - [x] ☁️ 25 > [Day 12: AWS CloudWatch, CloudTrail & Config](Journey/025/Readme.md)
-- [ ] ☁️ 26 > [](Journey/026/Readme.md)
+- [x] ☁️ 26 > [Day 13: Identity and Access Management (IAM) - Advanced](Journey/026/Readme.md)
 - [ ] ☁️ 27 > [](Journey/027/Readme.md)
 - [ ] ☁️ 28 > [](Journey/028/Readme.md)
 - [ ] ☁️ 29 > [](Journey/029/Readme.md)
