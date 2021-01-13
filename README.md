@@ -49,7 +49,7 @@ At the end of the challenge, I want to gain the Solutions Architect Associate ce
 - [x] ☁️ 25 > [Day 12: AWS CloudWatch, CloudTrail & Config](Journey/025/Readme.md)
 - [x] ☁️ 26 > [Day 13: Identity and Access Management (IAM) - Advanced](Journey/026/Readme.md)
 - [x] ☁️ 27 > [Day 14: AWS Security & Encryption: KMS, SSM Parameter Store, CloudHSM, Shield, WAF](Journey/027/Readme.md)
-- [ ] ☁️ 28 > [](Journey/028/Readme.md)
+- [x] ☁️ 28 > [Day 15: Networking - VPC](Journey/028/Readme.md)
 - [ ] ☁️ 29 > [](Journey/029/Readme.md)
 - [ ] ☁️ 30 > [](Journey/030/Readme.md)
 
