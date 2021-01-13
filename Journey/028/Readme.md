@@ -136,7 +136,7 @@ you must set both these attributes to true
 - We can use a Bastion Host to SSH into our **private instances**
 - The bastion is in the public subnet which is then connected to all other private subnets
 - Bastion Host security group must be tightened
-- **Exam Tip**: Make sure the bastion host **only has port 22** traffic **from the IP you need**, not from the security groups of your other instances
+- **Exam Tip**: Make sure the bastion host **only has port 22 traffic** (SSH TCP Port 22) **from the IP you need**, not from the security groups of your other instances
 
 ## Site to Site VPN
 Customer gateway is on the corporate data center side. VPN gateway is on the VPC side. Site to site VPN connection links the two together.
