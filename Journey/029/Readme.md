@@ -127,3 +127,15 @@
     - Automate creation of VPC, Subnet, cluster type and instance types
     
 
+### High Availability for a Bastion Host
+
+![](High%20Availability%20for%20a%20Bastion%20Host.png)
+
+- HA options for the bastion host
+    - Run 2 across 2 AZ
+    - Run 1 across 2 AZ with 1 ASG 1:1:1
+- Routing to the bastion host
+    - If 1 bastion host, use an elastic IP with ec2 user-data script to access it
+    - If 2 bastion hosts, use an Network Load Balancer (layer 4) deployed in multiple AZ
+    - If NLB, the bastion hosts can live in the private subnet directly
+- Note: Can’t use ALB as the ALB is layer 7 (HTTP protocol)
