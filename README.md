@@ -50,7 +50,7 @@ At the end of the challenge, I want to gain the Solutions Architect Associate ce
 - [x] ☁️ 26 > [Day 13: Identity and Access Management (IAM) - Advanced](Journey/026/Readme.md)
 - [x] ☁️ 27 > [Day 14: AWS Security & Encryption: KMS, SSM Parameter Store, CloudHSM, Shield, WAF](Journey/027/Readme.md)
 - [x] ☁️ 28 > [Day 15: Networking - VPC](Journey/028/Readme.md)
-- [ ] ☁️ 29 > [](Journey/029/Readme.md)
+- [x] ☁️ 29 > [Day 16: Disaster Recovery & Migrations, High Performance Computing (HPC)](Journey/029/Readme.md)
 - [ ] ☁️ 30 > [](Journey/030/Readme.md)
 
 ## Into the bushy, thorny forest
