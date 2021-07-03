@@ -1,4 +1,4 @@
-# Day 5 - Wrap up : IAM + EC2 
+# Day 5 - Wrap up : AIM + EC2 
 
 ## EC2 Pricing
 - You are billed by the second, with a minimum of 60 seconds.
