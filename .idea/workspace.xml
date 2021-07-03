@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27649bfd-6fa5-45e0-b469-f15b534868bc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Journey/030/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Journey/030/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +31,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -45,7 +46,7 @@
       <workItem from="1607303731840" duration="2434000" />
       <workItem from="1608525690080" duration="97000" />
       <workItem from="1608677867261" duration="139099000" />
-      <workItem from="1625281940398" duration="300000" />
+      <workItem from="1625281940398" duration="1125000" />
     </task>
     <servers />
   </component>
