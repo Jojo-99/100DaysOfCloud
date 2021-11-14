@@ -4,7 +4,7 @@
 
 ## Jojo's Cloud Journey
 
-I am a Master of Information Technology student at The University of Auckland. I start my #100DaysOfCloud journey today (25 Nov 2020).
+I am a graduate full-stack developer and I start my #100DaysOfCloud journey today (25 Nov 2020).
 
 The reason that why I start this challenge is I want to improve my Cloud knowledge and get ready for future work. 
 
