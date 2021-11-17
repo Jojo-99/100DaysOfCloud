@@ -60,7 +60,7 @@ At the end of the challenge, I want to gain the Solutions Architect Associate ce
 - [x] ☁️ 33 > [AZ-900 Prep - day 2: PaaS & Saas](Journey/033/Readme.md)
 - [x] ☁️ 34 > [AZ-900 Prep - day 3](Journey/034/Readme.md)
 - [x] ☁️ 35 > [AZ-900 Prep - day 4](Journey/035/Readme.md)
-- [x] ☁️ 36 > [AZ-900 Prep - day 5](Journey/036/Readme.md)
+- [x] ☁️ 36 > [Azure solutions - Services for devlopers](Journey/036/Readme.md)
 - [x] ☁️ 37 > [Azure solutions - AI & Machine Learning](Journey/037/Readme.md)
 - [ ] ☁️ 38 > [](Journey/038/Readme.md)
 - [ ] ☁️ 39 > [](Journey/039/Readme.md)
