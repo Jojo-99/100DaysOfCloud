@@ -56,7 +56,7 @@ At the end of the challenge, I want to gain the Solutions Architect Associate ce
 ## Into the bushy, thorny forest
 
 - [x] ☁️ 31 > [Review CNA - Day 2](Journey/031/Readme.md)
-- [x] ☁️ 32 > [Intro to Azure](Journey/032/Readme.md)
+- [x] ☁️ 32 > [AZ-900 Day 1: Intro to Azure - Azure resource group](Journey/032/Readme.md)
 - [x] ☁️ 33 > [AZ-900 Prep - day 2: PaaS & Saas](Journey/033/Readme.md)
 - [x] ☁️ 34 > [AZ-900 Prep - day 3](Journey/034/Readme.md)
 - [x] ☁️ 35 > [AZ-900 Prep - day 4](Journey/035/Readme.md)
