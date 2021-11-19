@@ -1,7 +1,9 @@
 # Azure solutions - AI & Machine Learning
 ## Artificial Intelligence (AI) & Machine Learning
 ### Azure Machine Learning
+
 cloud-based to develop, train, and deploy machine learning models
+- Azure Machine Learning uses past trainings to provide predictions that have high probability
 
 ### Azure Machine Learning Studio
 -  a collaborative, drag-and-drop tool you can use to build, test, and deploy predictive analytics solutions on your data.
@@ -18,3 +20,5 @@ cloud-based to develop, train, and deploy machine learning models
   
 ### Azure Bot Service
 develop intelligent, enterprise-grade bots.
+
+- Azure Bot Services provides a digital online assistant that provides **speech support**. 
