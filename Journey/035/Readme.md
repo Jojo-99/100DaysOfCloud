@@ -1,14 +1,17 @@
-# # AZ-900 Prep - day 4
-## Azure Active Directory (Azure AD)
-- An Azure AD tenant can have multiple subscriptions but an Azure subscription can only be associated with one Azure AD tenant.
+# Serverless Computing
+## Azure Functions
+- Azure Functions provides **serverless computing** functionalities. 
 
-- You can change the Azure AD tenant to which an Azure subscription is associated.
+- Azure Functions is a serverless compute service that lets you run event-triggered code without having to explicitly provision or manage infrastructure.
 
-- If your subscription expires, you **lose access** to all the other resources associated with the subscription. However, the Azure AD directory **remains** in Azure. You can associate and manage the directory using a different Azure subscription.
+## Azure Logic Apps
+Azure Logic Apps is a cloud service that helps you schedule, automate, and orchestrate tasks, business processes, and workflows when you need to integrate apps, data, systems, and services across enterprises or organizations.
+Logic Apps simplifies how you design and build scalable solutions for app integration, data integration, system integration, enterprise application integration (EAI), and business-to-business (B2B) communication, whether in the cloud, on premises, or both.
 
-## Azure resource 
-- An Azure resource can have multiple Delete locks.
+**For example**, here are just a few workloads you can automate with logic apps:
+Process and route orders across on-premises systems and cloud services.
 
-- An Azure resource inherits locks from its resource group.
-
-- If an Azure resource has a Read-only lock, you can add a Delete lock to the resource.
+- Send email notifications with Office 365 when events happen in various systems, apps, and services.
+- Move uploaded files from an SFTP or FTP server to Azure Storage.
+- Monitor tweets for a specific subject, analyze the sentiment, and create alerts or tasks for items that need
+- review
