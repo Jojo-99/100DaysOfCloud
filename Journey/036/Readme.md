@@ -4,7 +4,7 @@
 #### development collaboration tools including pipelines, Kanban boards, and automated cloud-based load testing
 - Azure DevOps is Microsoft's primary software development and deployment platform. 
 - DevOps influences the application lifecycle throughout its plan, develop, deliver and operate phases.
-- 
+  
 ## DevTest Labs
 #### quickly create environments in Azure while minimizing waste and controlling cost
 
