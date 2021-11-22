@@ -1,52 +1,22 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
+# Big data and analytics
+## Azure SQL Synapse Analytics 
+(previously called Data Warehouse) - MPP (massively parallel processing) 
 
-# New post title here
+Azure SQL Synapse Analytics (previously called Data Warehouse) is a cloud-based Platform-as-a-Service (**PaaS**) offering from Microsoft. It is a large-scale, distributed, **MPP (massively parallel processing)** relational database technology in the same class of competitors as Amazon Redshift or Snowflake. Azure SQL Synapse Analytics is an important component of the Modern Data Warehouse multi-platform architecture. Because Azure SQL Synapse Analytics is an MPP system with a shared-nothing architecture across distributions, it is meant for large-scale analytical workloads which can take advantage of parallelism.
 
-## Introduction
+One of the benefits of Azure SQL Data Warehouse is that high availability is built into the platform.
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+## Azure Data Lake
+Azure Data Lake includes all of the capabilities required to make it easy for developers, data scientists and analysts to store data of any size and shape and at any speed, and do all types of processing and analytics across platforms and languages. It removes the complexities of ingesting and storing all your data while making it faster to get up and running with batch, streaming and interactive analytics. It also integrates seamlessly with operational stores and data warehouses so that you can extend current data applications.
 
-## Prerequisite
+You can process **big data** jobs in seconds with Azure Data Lake Analytics. You can process **petabytes of data** for diverse workload categories such as querying, ETL, analytics, machine learning, machine translation, image processing and sentiment analysis by leveraging existing libraries written in .NET languages, R or Python.
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+## Azure HDInsight 
+Apache Hadoop was the original open-source framework for distributed processing and analysis of big data sets on clusters. The Hadoop ecosystem includes related software and utilities, including Apache Hive, Apache HBase, Spark, Kafka, and many others.
 
-## Use Case
+Azure HDInsight is a fully managed, full-spectrum, **open-source** analytics service in the cloud for enterprises. The Apache Hadoop cluster type in Azure HDInsight allows you to use HDFS, YARN resource management, and a simple MapReduce programming model to process and analyze batch data in parallel.
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
+## Azure Databricks
+Azure Databricks is a **big analysis service** for **machine learning**. 
 
-## Cloud Research
-
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
-
-## Try yourself
-
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
-
-### Step 1 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 1 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 3 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-## ☁️ Cloud Outcome
-
-✍️ (Result) Describe your personal outcome, and lessons learned.
-
-## Next Steps
-
-✍️ Describe what you think you think you want to do next.
-
-## Social Proof
-
-✍️ Show that you shared your process on Twitter or LinkedIn
-
-[link](link)
+Azure Databricks is an **Apache Spark-based** analytics platform. The platform consists of several components including `MLib'. Mlib is a Machine Learning library consisting of common learning algorithms and utilities, including classification, regression, clustering, collaborative filtering, dimensionality reduction, as well as underlying optimization primitives.

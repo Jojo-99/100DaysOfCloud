@@ -62,8 +62,8 @@ At the end of the challenge, I want to gain the Solutions Architect Associate ce
 - [x] ☁️ 35 > [Serverless Computing](Journey/035/Readme.md)
 - [x] ☁️ 36 > [Azure solutions - Services for devlopers](Journey/036/Readme.md)
 - [x] ☁️ 37 > [Azure solutions - AI & Machine Learning](Journey/037/Readme.md)
-- [ ] ☁️ 38 > [](Journey/038/Readme.md)
-- [ ] ☁️ 39 > [](Journey/039/Readme.md)
+- [x] ☁️ 38 > [Azure Database Services](Journey/038/Readme.md)
+- [X] ☁️ 39 > [Big data and analytics](Journey/039/Readme.md)
 - [ ] ☁️ 40 > [](Journey/040/Readme.md)
 
 ## Trekking the dunes
