@@ -64,7 +64,7 @@ At the end of the challenge, I want to gain the Solutions Architect Associate ce
 - [x] ☁️ 37 > [Azure solutions - AI & Machine Learning](Journey/037/Readme.md)
 - [x] ☁️ 38 > [Azure Database Services](Journey/038/Readme.md)
 - [X] ☁️ 39 > [Big data and analytics](Journey/039/Readme.md)
-- [ ] ☁️ 40 > [](Journey/040/Readme.md)
+- [x] ☁️ 40 > [Azure Monitor](Journey/040/Readme.md)
 
 ## Trekking the dunes
 

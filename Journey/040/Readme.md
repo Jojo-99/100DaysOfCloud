@@ -1,52 +1,20 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
+## Azure Monitor 
+Azure Monitor is used to **monitoring the health of Azure services**. 
 
-# New post title here
+Azure Monitor maximizes the availability and performance of your applications and services by delivering a comprehensive solution for collecting, analyzing, and acting on telemetry from your **cloud** and **on-premises** environments. It helps you understand how your applications are performing and proactively identifies issues affecting them and the resources they depend on.
 
-## Introduction
+Azure Monitor uses **Target Resource**, which is the scope and signals available for alerting. A **target** can be **any Azure resource**. Example targets: a virtual machine, a storage account, a virtual machine scale set, a Log Analytics workspace, or an Application Insights resource
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+### Collected data types - metrics & logs
+All data collected by Azure Monitor fits into one of two fundamental types, metrics and logs (including Azure AD activity logs). 
+1. Activity **logs** record when resources are created or modified. 
+2. **Metrics** tell you how the resource is performing and the resources that it's consuming.
+   
+Azure Monitor can consolidate log entries from **multiple Azure resources**, subscriptions, and tenants into one location for analysis together.
 
-## Prerequisite
+Activity logs are kept for **90 days**. You can query for any range of dates, as long as the starting date isn't more than 90 days in the past.
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+### can create alerts in Azure Monitor
+**Alerts** in Azure Monitor proactively notify you of critical conditions and potentially attempt to take corrective action.   - **Automotion Actions**
 
-## Use Case
-
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
-
-## Cloud Research
-
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
-
-## Try yourself
-
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
-
-### Step 1 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 1 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 3 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-## ☁️ Cloud Outcome
-
-✍️ (Result) Describe your personal outcome, and lessons learned.
-
-## Next Steps
-
-✍️ Describe what you think you think you want to do next.
-
-## Social Proof
-
-✍️ Show that you shared your process on Twitter or LinkedIn
-
-[link](link)
+Alert rules based on **metrics** provide near *real time* alerting based on numeric values, while rules based on **logs** allow for complex logic *across data* from *multiple sources*. 
