@@ -67,8 +67,7 @@ At the end of the challenge, I want to gain the Solutions Architect Associate ce
 - [x] ☁️ 40 > [Azure Monitor](Journey/040/Readme.md)
 
 ## Trekking the dunes
-
-- [ ] ☁️ 41 > [](Journey/041/Readme.md)
+- [x] ☁️ 41 > [Azure security and network security](Journey/041/Readme.md)
 - [ ] ☁️ 42 > [](Journey/042/Readme.md)
 - [ ] ☁️ 43 > [](Journey/043/Readme.md)
 - [ ] ☁️ 44 > [](Journey/044/Readme.md)
