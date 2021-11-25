@@ -1,52 +1,26 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
+# Azure security and network security - 2
+## Azure Key Vault
+Azure Key Vault is a secure store for storage various types of **sensitive information**. (eg. administrative credentials)
 
-# New post title here
+Azure Key Vault can be used to Securely store and tightly control access to tokens, passwords, certificates, API keys, and other secrets.
+Access to a key vault requires proper authentication and authorization before a caller (user or application) can get access. Authentication establishes the identity of the caller, while authorization determines the operations that they are allowed to perform.
 
-## Introduction
+Centralizing storage of **application secrets** in Azure Key Vault allows you to control their distribution. Key Vault greatly reduces the chances that secrets may be accidentally leaked. When using Key Vault, application developers no longer need to store security information in their application. Not having to store security information in applications eliminates the need to make this information part of the code. For example, an application may need to connect to a database. Instead of storing the connection string in the app's code, you can store it securely in Key Vault.
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+## Azure Information Protection
+Azure Information Protection can **encrypt documents and emails**. Azure Information Protection is a cloud-based solution that helps an organization to **classify** and optionally, protect its documents and emails by applying **labels**. 
 
-## Prerequisite
+Azure Information Protection is used to **automatically add a watermark** to Microsoft Word documents that contain credit card information.
+You use Azure Information Protection labels to apply classification to documents and emails. When you do this, the classification is identifiable regardless of where the data is stored or with whom it's shared. The labels can include visual markings such as a header, footer, or watermark.
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+Labels can be applied automatically by administrators who define rules and conditions, manually by users, or a combination where users are given recommendations.
+The protection technology uses **Azure Rights Management** (often abbreviated to Azure RMS). This technology is integrated with other Microsoft cloud services and applications, such as Office 365 and Azure Active Directory.
+This protection technology uses encryption, identity, and authorization policies. Similarly to the labels that are applied, protection that is applied by using Rights Management stays with the documents and emails, independently of the location ?inside or outside your organization, networks, file servers, and applications.
 
-## Use Case
+## Azure Distributed Denial of Service (DDoS)
+DDoS is a form of attack on a network resource. A DDoS protection plan is used to protect against DDoS attacks. 
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
+Azure has **two DDoS service** offerings that provide protection from network attacks: **DDoS Protection Basic** and **DDoS Protection Standard**. 
 
-## Cloud Research
-
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
-
-## Try yourself
-
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
-
-### Step 1 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 1 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 3 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-## ☁️ Cloud Outcome
-
-✍️ (Result) Describe your personal outcome, and lessons learned.
-
-## Next Steps
-
-✍️ Describe what you think you think you want to do next.
-
-## Social Proof
-
-✍️ Show that you shared your process on Twitter or LinkedIn
-
-[link](link)
+DDoS **Basic** protection is integrated into the Azure platform by default and at no extra cost.
+You have the option of paying for DDoS **Standard**. It has several advantages over the basic service, including **logging, alerting, and telemetry**. DDoS **Standard** can generate reports that contain details of attempted attacks as required in this question.
