@@ -70,7 +70,7 @@ At the end of the challenge, I want to gain the Solutions Architect Associate ce
 - [x] ☁️ 41 > [Azure security and network security](Journey/041/Readme.md)
 - [x] ☁️ 42 > [Azure security and network security - 2](Journey/042/Readme.md)
 - [x] ☁️ 43 > [Azure Active Directory ](Journey/043/Readme.md)
-- [ ] ☁️ 44 > [](Journey/044/Readme.md)
+- [x] ☁️ 44 > [Exam day](Journey/044/Readme.md)
 - [ ] ☁️ 45 > [](Journey/045/Readme.md)
 - [ ] ☁️ 46 > [](Journey/046/Readme.md)
 - [ ] ☁️ 47 > [](Journey/047/Readme.md)
